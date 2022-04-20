@@ -4,22 +4,43 @@ namespace Personagens_rpg
 {
     class Program
     {
-      //  static public int decisao;
+        //  static public int decisao;
         static void Main(string[] args)
         {
-         //   Mago mago1 = new Mago();
+            Mago mago1 = new Mago();
 
-           // mago1.Socar();
+            // mago1.Socar();
 
             //mago1.lançar_feitiço1();
 
             int decisao;
 
-             do
-           {
-               Console.WriteLine("oie");
-               decisao = Convert.ToInt32(Console.ReadLine());
-           } while (decisao == 0);
+
+            do
+            {
+                Console.WriteLine("\n O que deseja fazer? Caso Queira parar, digite '0' ");
+                Console.WriteLine("1- Definir tipo de mago | 2- Lançar o 1ª feitiço | 3- Lançar 2ª feitiço ");
+                decisao = Convert.ToInt32(Console.ReadLine());
+
+                switch (decisao)
+                {
+                    case 0:
+                    Console.WriteLine("\n Até a próxima!");
+                    break;
+                    case 1:
+
+                        break;
+                    case 2:
+                        mago1.lançar_feitiço1();
+                        break;
+                    case 3:
+                        
+                        break;
+
+                
+                }
+
+            } while (decisao != 0);
         }
     }
 }
