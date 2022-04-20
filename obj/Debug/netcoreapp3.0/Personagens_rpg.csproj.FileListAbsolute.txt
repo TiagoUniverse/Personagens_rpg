@@ -1,0 +1,11 @@
+C:\Projetos\1 -BACKEND\C SHARP\Personagens_rpg\obj\Debug\netcoreapp3.0\Personagens_rpg.csprojAssemblyReference.cache
+C:\Projetos\1 -BACKEND\C SHARP\Personagens_rpg\obj\Debug\netcoreapp3.0\Personagens_rpg.AssemblyInfoInputs.cache
+C:\Projetos\1 -BACKEND\C SHARP\Personagens_rpg\obj\Debug\netcoreapp3.0\Personagens_rpg.AssemblyInfo.cs
+C:\Projetos\1 -BACKEND\C SHARP\Personagens_rpg\bin\Debug\netcoreapp3.0\Personagens_rpg.exe
+C:\Projetos\1 -BACKEND\C SHARP\Personagens_rpg\bin\Debug\netcoreapp3.0\Personagens_rpg.deps.json
+C:\Projetos\1 -BACKEND\C SHARP\Personagens_rpg\bin\Debug\netcoreapp3.0\Personagens_rpg.runtimeconfig.json
+C:\Projetos\1 -BACKEND\C SHARP\Personagens_rpg\bin\Debug\netcoreapp3.0\Personagens_rpg.runtimeconfig.dev.json
+C:\Projetos\1 -BACKEND\C SHARP\Personagens_rpg\bin\Debug\netcoreapp3.0\Personagens_rpg.dll
+C:\Projetos\1 -BACKEND\C SHARP\Personagens_rpg\bin\Debug\netcoreapp3.0\Personagens_rpg.pdb
+C:\Projetos\1 -BACKEND\C SHARP\Personagens_rpg\obj\Debug\netcoreapp3.0\Personagens_rpg.dll
+C:\Projetos\1 -BACKEND\C SHARP\Personagens_rpg\obj\Debug\netcoreapp3.0\Personagens_rpg.pdb
