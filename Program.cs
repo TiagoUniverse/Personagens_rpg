@@ -8,6 +8,7 @@ namespace Personagens_rpg
         static Mago mago1 = new Mago();
         static Arqueiro arqueiro1 = new Arqueiro();
         static Assassino assassino1 = new Assassino();
+        static Guerreiro guerreiro1 = new Guerreiro();
         //  static public int decisao;
         static void Main(string[] args)
         {
@@ -16,7 +17,7 @@ namespace Personagens_rpg
             do
             {
                 Console.WriteLine("\n Qual classe você quer usar? ");
-                Console.WriteLine("0- Sair | 1-Mago ("+ mago1.getTipo_mago()+")_ | 2- Arqueiro("+ arqueiro1.getNome_arqueiro()  +") | 3- Assassino("+ assassino1.getNome() +") :");
+                Console.WriteLine("0- Sair | 1-Mago (" + mago1.getTipo_mago() + ")_ | 2- Arqueiro(" + arqueiro1.getNome_arqueiro() + ") | 3- Assassino(" + assassino1.getNome() + ") | 4- Guerreiro (" + guerreiro1.getNome() + ") :");
                 decisaoMain = Convert.ToInt32(Console.ReadLine());
                 switch (decisaoMain)
                 {
@@ -31,6 +32,9 @@ namespace Personagens_rpg
                         break;
                     case 3:
                         MenuAssassino();
+                        break;
+                    case 4:
+                        MenuGuerreiro();
                         break;
                     default:
                         Console.WriteLine("Não entendi o que você quis dizer");
@@ -123,7 +127,7 @@ namespace Personagens_rpg
                 Console.WriteLine("\n O que deseja fazer, Sr. " + assassino1.getNome() + "? Caso Queira parar, digite '0' ");
                 Console.WriteLine("0- Escolher outra classe | 1- Definir o tipo de assassino | 2- Registrar outro assassino | 3- Camuflar | 4- Aparecer | 5- Treinar velocidade | 6- checar velocidade |7- Roubar moedas");
                 decisao = Convert.ToInt32(Console.ReadLine());
-                //Menu do arqueiro
+                //Menu do assassino
                 switch (decisao)
                 {
                     case 0:
@@ -139,7 +143,7 @@ namespace Personagens_rpg
                         assassino1.camuflar();
                         break;
                     case 4:
-                       assassino1.aparecer();
+                        assassino1.aparecer();
                         break;
                     case 5:
                         assassino1.treinar_velocidade();
@@ -158,7 +162,39 @@ namespace Personagens_rpg
             } while (decisao != 0);
         }
 
+        public static void MenuGuerreiro()
+        {
+            int decisao;
+            do
+            {
+                Console.WriteLine("\n O que deseja fazer, Sr. " + guerreiro1.getNome() + "? Caso Queira parar, digite '0' ");
+                Console.WriteLine("0- Escolher outra classe | 1- Definir o tipo de guerreiro |2- Registrar outro guerreiro | 3- verificar destruição conquistada | 4- Machadar uma mesa");
+                decisao = Convert.ToInt32(Console.ReadLine());
+                //Menu do guerreiro
+                switch (decisao)
+                {
+                    case 0:
+                        Console.WriteLine("\n Até a próxima!");
+                        break;
+                    case 1:
+                        guerreiro1.cadastro_nome();
+                        break;
+                    case 2:
+                       guerreiro1.alteracao_nome();
+                        break;
+                    case 3:
+                        guerreiro1.destruicao_conquistada();
+                        break;
+                    case 4:
+                        guerreiro1.machadada_mesa();
+                        break;
+                    default:
+                        Console.WriteLine("\n ->>>>> Não entendi o que você quis dizer");
+                        break;
+                }
 
+            } while (decisao != 0);
+        }
 
     }
 }
