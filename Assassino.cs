@@ -2,7 +2,7 @@ using System;
 
 namespace Personagens_rpg
 {
-    class Assassino
+    class Assassino : Ser_vivo
     {
         private string nome;
         private string tipo_lamina;
@@ -49,6 +49,7 @@ namespace Personagens_rpg
             this.camuflado = camuflado;
         }
 
+           
         public void codigo_cadastro()
         {
             Console.WriteLine("Diga: qual o seu nome, assassino?");
@@ -56,7 +57,8 @@ namespace Personagens_rpg
 
             Console.WriteLine("E que lâmina é essa que está carregando?");
             setTipo_lamina(Console.ReadLine());
-
+            //Vai na classe principal 'Programa'  e registra as informações da herança
+            Program.servivo_arqueiro();
             Console.WriteLine("Muito bem. Pode entrar.");
         }
         public void cadastro_assassino()

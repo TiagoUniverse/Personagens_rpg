@@ -59,6 +59,7 @@ namespace Personagens_rpg
             Console.WriteLine("->>>>> Agora! Lá vai o Feitiço: " + getFeitiço2());
         }
 
+       
         public void codigo_cadastro()
         {
             Console.WriteLine("diga: que tipo de mago você é? ");
@@ -69,7 +70,11 @@ namespace Personagens_rpg
 
             Console.WriteLine("Selecione seu 2ª feitiço ofensivo: ");
             setFeitiço2(Console.ReadLine());
+            //Vai na classe principal 'Programa'  e registra as informações da herança
+            Program.servivo_mago();
         }
+
+        
         public void preencherPerfil()
         {
             if (tipo_mago == null || feitiço1 == null || feitiço2 == null)
@@ -79,7 +84,8 @@ namespace Personagens_rpg
             }
         }
 
-        public void cadastro_mago(){
+        public void cadastro_mago()
+        {
             Console.WriteLine("Seja bem vindo à guilda, seu mago!");
             codigo_cadastro();
         }
@@ -97,6 +103,9 @@ namespace Personagens_rpg
             }
 
         }
+
+
+
 
     }
 }

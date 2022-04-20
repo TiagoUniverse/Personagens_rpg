@@ -69,6 +69,8 @@ namespace Personagens_rpg
             setNomeArqueiro(Console.ReadLine());
 
             Console.WriteLine("\n ->>>>> Muito bem. Agora vá comprar flechas na guilda! ");
+            //Vai na classe principal 'Programa'  e registra as informações da herança
+            Program.servivo_arqueiro();
         }
 
         public void preencher_arqueiro()

@@ -2,7 +2,7 @@ using System;
 
 namespace Personagens_rpg
 {
-    class Guerreiro
+    class Guerreiro : Ser_vivo
     {
         private string nome;
         private string tipo_machado;
@@ -45,7 +45,8 @@ namespace Personagens_rpg
 
             Console.WriteLine("E que machado é esse?");
             setTipo_machado(Console.ReadLine());
-
+            //Vai na classe principal 'Programa'  e registra as informações da herança
+            Program.servivo_guerreiro();
             Console.WriteLine("\n ->>> Ótimo! Seja bem vindo!");
         }
         public void cadastro_nome()

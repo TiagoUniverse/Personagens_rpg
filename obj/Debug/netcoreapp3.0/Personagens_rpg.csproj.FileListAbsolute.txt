@@ -9,3 +9,17 @@ C:\Projetos\1 -BACKEND\C SHARP\Personagens_rpg\bin\Debug\netcoreapp3.0\Personage
 C:\Projetos\1 -BACKEND\C SHARP\Personagens_rpg\bin\Debug\netcoreapp3.0\Personagens_rpg.pdb
 C:\Projetos\1 -BACKEND\C SHARP\Personagens_rpg\obj\Debug\netcoreapp3.0\Personagens_rpg.dll
 C:\Projetos\1 -BACKEND\C SHARP\Personagens_rpg\obj\Debug\netcoreapp3.0\Personagens_rpg.pdb
+C:\Users\Tiagão\Downloads\Personagens_rpg\bin\Debug\netcoreapp3.0\Personagens_rpg.exe
+C:\Users\Tiagão\Downloads\Personagens_rpg\bin\Debug\netcoreapp3.0\Personagens_rpg.deps.json
+C:\Users\Tiagão\Downloads\Personagens_rpg\bin\Debug\netcoreapp3.0\Personagens_rpg.runtimeconfig.json
+C:\Users\Tiagão\Downloads\Personagens_rpg\bin\Debug\netcoreapp3.0\Personagens_rpg.runtimeconfig.dev.json
+C:\Users\Tiagão\Downloads\Personagens_rpg\bin\Debug\netcoreapp3.0\Personagens_rpg.dll
+C:\Users\Tiagão\Downloads\Personagens_rpg\bin\Debug\netcoreapp3.0\Personagens_rpg.pdb
+C:\Users\Tiagão\Downloads\Personagens_rpg\obj\Debug\netcoreapp3.0\Personagens_rpg.csproj.AssemblyReference.cache
+C:\Users\Tiagão\Downloads\Personagens_rpg\obj\Debug\netcoreapp3.0\Personagens_rpg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tiagão\Downloads\Personagens_rpg\obj\Debug\netcoreapp3.0\Personagens_rpg.AssemblyInfoInputs.cache
+C:\Users\Tiagão\Downloads\Personagens_rpg\obj\Debug\netcoreapp3.0\Personagens_rpg.AssemblyInfo.cs
+C:\Users\Tiagão\Downloads\Personagens_rpg\obj\Debug\netcoreapp3.0\Personagens_rpg.csproj.CoreCompileInputs.cache
+C:\Users\Tiagão\Downloads\Personagens_rpg\obj\Debug\netcoreapp3.0\Personagens_rpg.dll
+C:\Users\Tiagão\Downloads\Personagens_rpg\obj\Debug\netcoreapp3.0\Personagens_rpg.pdb
+C:\Users\Tiagão\Downloads\Personagens_rpg\obj\Debug\netcoreapp3.0\Personagens_rpg.genruntimeconfig.cache
