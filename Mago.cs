@@ -39,28 +39,40 @@ namespace Personagens_rpg
             this.feitiço2 = feitiço2;
         }
 
-
+        public void Mago_possuiCadastro(){
+            preencherPerfil();
+            if (tipo_mago != null){
+                Console.WriteLine("->>>>> O seu mago está agora registrado na guilda!");
+            }
+        }
         public void lançar_feitiço1()
         {
-            if (tipo_mago == null   || feitiço1 == null || feitiço2 == null   )
+            preencherPerfil();
+            Console.WriteLine("->>>>> Toma essa! Feitiço: " + getFeitiço1());
+        }
+
+        public void lançar_feitiço2()
+        {
+            preencherPerfil();
+            Console.WriteLine("->>>>> Agora! Lá vai o Feitiço: " + getFeitiço2());
+        }
+
+        public void preencherPerfil()
+        {
+            if (tipo_mago == null || feitiço1 == null || feitiço2 == null)
             {
-                Console.WriteLine("Perai, aventureiro! Antes de ir pra luta, tem algo faltando saber sobre você!");
+                Console.WriteLine("Perai, aventureiro! Antes de ir pra luta, tem algo que a guilda está faltando saber sobre você!");
                 Console.WriteLine("diga: que tipo de mago você é? ");
                 setTipo_mago(Console.ReadLine());
 
                 Console.WriteLine("Selecione seu 1ª feitiço ofensivo: ");
                 setFeitiço1(Console.ReadLine());
-                
+
                 Console.WriteLine("Selecione seu 2ª feitiço ofensivo: ");
                 setFeitiço2(Console.ReadLine());
-                
+
             }
-
-            Console.WriteLine("Toma essa! Feitiço: " + getFeitiço1());
-
         }
-
-        
 
     }
 }

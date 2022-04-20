@@ -17,8 +17,8 @@ namespace Personagens_rpg
 
 
             do
-            {
-                Console.WriteLine("\n O que deseja fazer? Caso Queira parar, digite '0' ");
+            {   
+                Console.WriteLine("\n O que deseja fazer, Sr. " + mago1.getTipo_mago() + "? Caso Queira parar, digite '0' ");
                 Console.WriteLine("1- Definir tipo de mago | 2- Lançar o 1ª feitiço | 3- Lançar 2ª feitiço ");
                 decisao = Convert.ToInt32(Console.ReadLine());
 
@@ -28,13 +28,13 @@ namespace Personagens_rpg
                     Console.WriteLine("\n Até a próxima!");
                     break;
                     case 1:
-
+                        mago1.Mago_possuiCadastro();                       
                         break;
                     case 2:
-                        mago1.lançar_feitiço1();
+                        mago1.lançar_feitiço1();                       
                         break;
                     case 3:
-                        
+                        mago1.lançar_feitiço2();                   
                         break;
 
                 
