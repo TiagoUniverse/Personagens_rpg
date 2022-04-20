@@ -61,7 +61,7 @@ namespace Personagens_rpg
         {
             if (tipo_mago == null || feitiço1 == null || feitiço2 == null)
             {
-                Console.WriteLine("Perai, aventureiro! Antes de ir pra luta, tem algo que a guilda está faltando saber sobre você!");
+                Console.WriteLine("\n Perai, aventureiro! Antes de ir pra luta, tem algo que a guilda está faltando saber sobre você!");
                 Console.WriteLine("diga: que tipo de mago você é? ");
                 setTipo_mago(Console.ReadLine());
 
