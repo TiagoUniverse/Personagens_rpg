@@ -25,6 +25,7 @@ namespace Personagens_rpg
                         MenuMago();
                         break;
                     case 2:
+                        MenuArqueiro();
                         break;
                     case 3:
                         break;
@@ -74,5 +75,9 @@ namespace Personagens_rpg
         }
 
 
+        public static void MenuArqueiro()
+        {
+            
+        }
     }
 }
