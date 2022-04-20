@@ -3,13 +3,13 @@
 namespace Personagens_rpg
 {
     class Program
-    {
+    {   
+        //Objeto global
+        static Mago mago1 = new Mago();
         //  static public int decisao;
         static void Main(string[] args)
         {
             int decisaoMain;
-
-
 
             do
             {
@@ -40,11 +40,12 @@ namespace Personagens_rpg
         public static void MenuMago()
         {
             int decisao;
-            Mago mago1 = new Mago();
+            //objeto local
+           // Mago mago1 = new Mago();
             do
             {
                 Console.WriteLine("\n O que deseja fazer, Sr. " + mago1.getTipo_mago() + "? Caso Queira parar, digite '0' ");
-                Console.WriteLine("0- Escolher outra classe | 1- Definir tipo de mago | 2- Lançar o 1ª feitiço | 3- Lançar 2ª feitiço");
+                Console.WriteLine("0- Escolher outra classe | 1- Definir tipo de mago | 2- Lançar o 1ª feitiço | 3- Lançar 2ª feitiço | 4- Registrar outro mago");
                 decisao = Convert.ToInt32(Console.ReadLine());
                 //Menu do mago
                 switch (decisao)
@@ -60,6 +61,9 @@ namespace Personagens_rpg
                         break;
                     case 3:
                         mago1.lançar_feitiço2();
+                        break;
+                    case 4:
+                        mago1.alterarPerfil();
                         break;
                     default:
                         Console.WriteLine("Não entendi o que você quis dizer");
