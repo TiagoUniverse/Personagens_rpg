@@ -6,6 +6,7 @@ namespace Personagens_rpg
     {   
         //Objeto global
         static Mago mago1 = new Mago();
+        static Arqueiro arqueiro1 = new Arqueiro();
         //  static public int decisao;
         static void Main(string[] args)
         {
@@ -55,7 +56,7 @@ namespace Personagens_rpg
                         Console.WriteLine("\n Até a próxima!");
                         break;
                     case 1:
-                        mago1.Mago_possuiCadastro();
+                        mago1.cadastro_mago();
                         break;
                     case 2:
                         mago1.lançar_feitiço1();
@@ -67,7 +68,7 @@ namespace Personagens_rpg
                         mago1.alterarPerfil();
                         break;
                     default:
-                        Console.WriteLine("Não entendi o que você quis dizer");
+                        Console.WriteLine("\n ->>>>> Não entendi o que você quis dizer");
                         break;
                 }
 
@@ -77,7 +78,39 @@ namespace Personagens_rpg
 
         public static void MenuArqueiro()
         {
-            
+           int decisao;
+            do
+            {
+                Console.WriteLine("\n O que deseja fazer, Sr. " + arqueiro1.getNome_arqueiro() + "? Caso Queira parar, digite '0' ");
+                Console.WriteLine("0- Escolher outra classe | 1- Definir seu nome |2- Verificar quantidade de flechas | 3- Comprar flechas | 4- Atirar flechas | 5- Registrar outro arqueiro ");
+                decisao = Convert.ToInt32(Console.ReadLine());
+                //Menu do arqueiro
+                switch (decisao)
+                {
+                    case 0:
+                        Console.WriteLine("\n Até a próxima!");
+                        break;
+                    case 1:
+                       arqueiro1.cadastrar_arqueiro();
+                        break;
+                    case 2:
+                        arqueiro1.verificar_flechas();
+                        break;
+                    case 3:
+                        arqueiro1.recarregar_flecha();
+                        break;
+                    case 4:
+                        arqueiro1.atirar_flecha();
+                        break;
+                    case 5:
+                        arqueiro1.alterar_arqueiro();
+                        break;
+                    default:
+                        Console.WriteLine("\n ->>>>> Não entendi o que você quis dizer");
+                        break;
+                }
+
+            } while (decisao != 0 ); 
         }
     }
 }

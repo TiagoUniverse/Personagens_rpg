@@ -59,23 +59,30 @@ namespace Personagens_rpg
             Console.WriteLine("->>>>> Agora! Lá vai o Feitiço: " + getFeitiço2());
         }
 
+        public void codigo_cadastro()
+        {
+            Console.WriteLine("diga: que tipo de mago você é? ");
+            setTipo_mago(Console.ReadLine());
+
+            Console.WriteLine("Selecione seu 1ª feitiço ofensivo: ");
+            setFeitiço1(Console.ReadLine());
+
+            Console.WriteLine("Selecione seu 2ª feitiço ofensivo: ");
+            setFeitiço2(Console.ReadLine());
+        }
         public void preencherPerfil()
         {
             if (tipo_mago == null || feitiço1 == null || feitiço2 == null)
             {
                 Console.WriteLine("\n Perai, aventureiro! Antes de ir pra luta, tem algo que a guilda está faltando saber sobre você!");
-                Console.WriteLine("diga: que tipo de mago você é? ");
-                setTipo_mago(Console.ReadLine());
-
-                Console.WriteLine("Selecione seu 1ª feitiço ofensivo: ");
-                setFeitiço1(Console.ReadLine());
-
-                Console.WriteLine("Selecione seu 2ª feitiço ofensivo: ");
-                setFeitiço2(Console.ReadLine());
-
+                codigo_cadastro();
             }
         }
 
+        public void cadastro_mago(){
+            Console.WriteLine("Seja bem vindo à guilda, seu mago!");
+            codigo_cadastro();
+        }
         public void alterarPerfil()
         {
             if (tipo_mago == null || feitiço1 == null || feitiço2 == null)
@@ -86,14 +93,7 @@ namespace Personagens_rpg
             else
             {
                 Console.WriteLine("\n Muito bem, aventureiro! Vamos registrar outro mago.");
-                Console.WriteLine("diga: que tipo de mago você é? ");
-                setTipo_mago(Console.ReadLine());
-
-                Console.WriteLine("Selecione seu 1ª feitiço ofensivo: ");
-                setFeitiço1(Console.ReadLine());
-
-                Console.WriteLine("Selecione seu 2ª feitiço ofensivo: ");
-                setFeitiço2(Console.ReadLine());
+                codigo_cadastro();
             }
 
         }
